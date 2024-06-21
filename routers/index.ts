@@ -6,7 +6,8 @@ const indexRouter = express.Router();
 indexRouter.get('/', (req, res) => {
   res.json(
     createJsonResponse({
-      message: 'Application is running smoothly!',
+      message:
+        'Application is running smoothly! Try the available endpoints: /users',
     })
   );
 });
