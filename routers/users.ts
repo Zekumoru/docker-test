@@ -1,7 +1,6 @@
 import express from 'express';
 import createJsonResponse from '../utilities/createJsonResponse';
 import User from '../types/User';
-import { v4 as uuid4 } from 'uuid';
 
 const usersRouter = express.Router();
 
@@ -10,11 +9,11 @@ usersRouter.get('/', (req, res) => {
     createJsonResponse<{ users: User[] }>({
       users: [
         {
-          id: uuid4(),
+          id: '0079d298-9df2-4ca9-bda1-4679d943d454',
           name: 'Zekumoru',
         },
         {
-          id: uuid4(),
+          id: '8b391f50-909b-481e-862a-8b57e98f3b7f',
           name: 'Yuzuki',
         },
       ].sort((a, b) => a.name.localeCompare(b.name)),
