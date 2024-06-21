@@ -4,7 +4,7 @@
   "main": "app.ts",
   "license": "MIT",
   "scripts": {
-    "start": "ts-node",
+    "start": "ts-node app.ts",
     "dev": "nodemon"
   },
   "dependencies": {
