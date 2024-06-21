@@ -3,7 +3,9 @@ export interface JsonResponse {
   message?: string;
 }
 
-const createJsonResponse = (json: JsonResponse): JsonResponse => {
+const createJsonResponse = <T extends object>(
+  json: JsonResponse & T
+): JsonResponse => {
   return {
     status: 200,
     ...json,
